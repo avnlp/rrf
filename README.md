@@ -36,27 +36,25 @@ BM25 retrieval was used for Sparse retrieval in the Hybrid pipelines. The `bge-r
 
 To run the pipelines, you will need to clone this repository and install the required libraries.
 
-1. Install the `rrf` package:
+1. Sync the project and its development dependencies:
 
 ```bash
 git clone https://github.com/avnlp/rrf
 cd rrf
-pip install -e .
+make sync
 ```
 
 2. To add the data to an index in Pinecone using the INSTRUCTOR-XL embedding model:
 
 ```python
-cd src/rrf/indexing_pipeline/fiqa
-python pinecone_instructor_index.py
+uv run python src/rrf/indexing_pipelines/fiqa/pinecone_instructor_index.py
 ```
 
 3. To run a specific pipeline you will have to go that file path and then run the file.
 For example, running the pipeline that uses dense retrieval with a combination of Diversity Ranker, Lost In The Middle Ranker and Similarity Ranker:
 
 ```python
-cd src/rrf/pointwise/instructor_xl/fiqa/
-python dense_similarity_diversity_litm.py
+uv run python src/rrf/pointwise/instructor_xl/fiqa/dense_similarity_diversity_litm.py
 ```
 
 ## License
