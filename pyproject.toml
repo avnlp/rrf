@@ -7,7 +7,7 @@ name = "rrf"
 version = "0.0.1"
 description = 'Performance Evaluation of Rankers and RRF Techniques for Retrieval Pipelines'
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = { file = "LICENSE" }
 keywords = ["RAG", "Retrieval", "Rankers", "LLMs", "RRF"]
 authors = [
@@ -21,11 +21,12 @@ maintainers = [
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Science/Research",
-
   "Operating System :: OS Independent",
   "Programming Language :: Python",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: Implementation :: PyPy",
   "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
