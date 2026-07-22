@@ -7,8 +7,8 @@ name = "rrf"
 version = "0.0.1"
 description = 'Performance Evaluation of Rankers and RRF Techniques for Retrieval Pipelines'
 readme = "README.md"
-requires-python = ">=3.8"
-license = "MIT"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
 keywords = ["RAG", "Retrieval", "Rankers", "LLMs", "RRF"]
 authors = [
   { name = "Ashwin Mathur", email = "" },
@@ -21,13 +21,10 @@ maintainers = [
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Science/Research",
-  "License :: Freely Distributable",
-  "License :: OSI Approved :: MIT License",
+
   "Operating System :: OS Independent",
   "Programming Language :: Python",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: Implementation :: PyPy",
   "Topic :: Scientific/Engineering :: Artificial Intelligence",
@@ -117,6 +114,8 @@ lint.ignore = [
   # Ignore print statements
   "T201",
   "E501",
+  # Ignore deprecated typing imports
+  "UP035",
 ]
 lint.unfixable = [
   # Don't touch unused imports

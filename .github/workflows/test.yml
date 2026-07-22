@@ -1,4 +1,4 @@
-name: Test
+name: Lint
 
 on:
   push:
@@ -17,16 +17,16 @@ env:
 
 jobs:
   run:
-    name: Python 3.9 on Linux
+    name: Lint
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v7
 
-      - name: Set up Python 3.9
+      - name: Set up Python 3.10
         uses: actions/setup-python@v7
         with:
-          python-version: "3.9"
+          python-version: "3.10"
 
       - name: Install uv
         uses: astral-sh/setup-uv@v7
